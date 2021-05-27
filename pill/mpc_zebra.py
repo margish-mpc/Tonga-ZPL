@@ -12,7 +12,7 @@ def print_label_prod_1x1(ip, model, serial_no, fcc_id):
     label_file.close()
 
     zpl_print_str = zpl_print_str.replace(MODEL, model)
-    zpl_print_str = zpl_print_str.replace(SERIAL_NO, serial_no])
+    zpl_print_str = zpl_print_str.replace(SERIAL_NO, serial_no)
     zpl_print_str = zpl_print_str.replace(FCC_ID, fcc_id)
     print(zpl_print_str)
     return
