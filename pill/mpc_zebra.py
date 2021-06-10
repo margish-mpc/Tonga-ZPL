@@ -15,7 +15,7 @@ def print_label_prod_1x1(ip, model, serial_no, barcode_data):
     zpl_print_str = zpl_print_str.replace(SERIAL_NO, serial_no)
     zpl_print_str = zpl_print_str.replace(BARCODE_DATA, barcode_data)
     print(zpl_print_str)
-    return
+
     new_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     new_socket.connect((ip, PRINTER_PORT))
     new_socket.send(zpl_print_str.encode())
