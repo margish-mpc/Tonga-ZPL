@@ -10,7 +10,7 @@ def main():
     model = sys.argv[2]
     serial_no = sys.argv[3]
     barcode_data = sys.argv[4]
-    mpc_zebra.print_label_prod_1x1(ip_1x1, model,serial_no, barcode_data)
+    mpc_zebra.print_label_proto_1x1(ip_1x1, model,serial_no, barcode_data)
 
 if __name__ == '__main__':
     main()
